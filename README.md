@@ -5,6 +5,7 @@ Title project: Food Ordering System (TapN'Eat)
 
 Summary of project:
 “TapN’Eat” is a Food Ordering System that can be used by any shop’s staff, lecturers, and students in UTeM. It will help staff to prepare the order faster and students be able to order the food earlier to save some time. This system is convenient for all sides because the operations involved are to receive orders, create orders, update menu and many more without need to do it manually.
+
 This is list name of our group members:
 
 1)	Mohamad Khairul Ikwan Bin Md Yusoff (B032010092)
