@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="210dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <Button
+        android:id="@+id/item_minus"
+        android:layout_width="46dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="250dp"
+        android:layout_marginTop="90dp"
+        android:text="-"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/item_plus"
+        android:layout_width="46dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="350dp"
+        android:layout_marginTop="90dp"
+        android:text="+"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/item_quantity_edit"
+        android:layout_width="42dp"
+        android:layout_height="51dp"
+        android:layout_marginLeft="300dp"
+        android:layout_marginTop="95dp"
+        android:text="0"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/item_delete"
+        android:layout_marginLeft="350dp"
+        android:layout_marginTop="25dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/ic_deletecart"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/imageView"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        app:cardCornerRadius="60dp">
+
+
+
+        <ImageView
+            android:id="@+id/thumbnail"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/loading_shape">
+
+        </ImageView>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/item_name"
+        android:layout_width="220dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="20dp"
+        android:text="Food Name"
+        android:textSize="18dp"
+        style="@style/Text"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/shopNameCart"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="50dp"
+        style="@style/Text"
+        android:text="Shop Name" />
+
+    <TextView
+        android:id="@+id/item_description"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:text="Description"
+        style="@style/Text"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="71dp"/>
+
+
+    <TextView
+        android:id="@+id/item_quantity"
+        android:layout_width="42dp"
+        android:layout_height="51dp"
+        android:layout_marginLeft="310dp"
+        android:layout_marginTop="105dp"
+        android:text="0"
+        style="@style/Text"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/quantityWord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="180dp"
+        android:layout_marginTop="110dp"
+        android:text="Quantity :"
+        style="@style/Text"/>
+
+    <TextView
+        android:id="@+id/perPriceWord"
+        android:layout_width="105dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="155dp"
+        android:layout_marginLeft="30dp"
+        android:text="   Per Price: RM "
+        android:textStyle="bold"
+        style="@style/Text"/>
+
+    <TextView
+        android:id="@+id/rmPrice"
+        android:layout_width="105dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="175dp"
+        android:layout_marginLeft="30dp"
+        android:text="Total Price: RM "
+        android:textStyle="bold"
+        style="@style/Text"/>
+
+    <TextView
+        android:id="@+id/item_price"
+        android:layout_width="200dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="135dp"
+        android:layout_marginTop="155dp"
+        android:text="Price"
+        android:textStyle="bold"
+        style="@style/Text"/>
+
+    <TextView
+        android:id="@+id/item_total_price"
+        android:layout_width="200dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="175dp"
+        android:layout_marginLeft="135dp"
+        android:text="Total Price"
+        android:textStyle="bold"
+        style="@style/Text"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="200dp"
+        android:background="@color/underline">
+
+    </View>
+
+
+
+</RelativeLayout>

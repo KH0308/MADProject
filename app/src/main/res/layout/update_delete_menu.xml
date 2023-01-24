@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="5dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imgItm"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="50dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_launcher_background"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/menuIdItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@+id/imgItm"
+            android:text="Menu Item ID"
+            style="@style/Text"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/IDShop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Business ID"
+            style="@style/Text"
+            android:textSize="12sp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/menuIdItem"
+            android:layout_toEndOf="@+id/imgItm"/>
+
+        <TextView
+            android:id="@+id/idMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Menu ID"
+            style="@style/Text"
+            android:textSize="12sp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/IDShop"
+            android:layout_toEndOf="@+id/imgItm" />
+
+        <Spinner
+            android:id="@+id/idSpnMenuItm"
+            android:layout_width="60dp"
+            android:layout_height="15dp"
+            android:layout_alignTop="@+id/idMenu"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@+id/idMenu"
+            android:backgroundTint="@color/midGreen"
+            android:entries="@array/spinner_values_menuCategory"
+            android:minHeight="12dp"
+            android:textAlignment="center"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <TextView
+            android:id="@+id/idCategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Category ID"
+            style="@style/Text"
+            android:textSize="12sp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/idMenu"
+            android:layout_toEndOf="@+id/imgItm"/>
+
+        <Spinner
+            android:id="@+id/idSpnCgtItm"
+            android:layout_width="60dp"
+            android:layout_height="15dp"
+            android:layout_alignTop="@+id/idCategory"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@+id/idCategory"
+            android:backgroundTint="@color/midGreen"
+            android:entries="@array/spinner_values_menuID"
+            android:minHeight="12dp"
+            android:textAlignment="center"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/itemName"
+            style="@style/Text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/idCategory"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@+id/imgItm"
+            android:autofillHints="name"
+            android:hint="Name"
+            android:textColorHint="@color/highGreen"
+            android:inputType="textMultiLine"
+            android:maxLines="2"
+            android:singleLine="true"
+            android:textSize="12sp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/desc"
+            style="@style/Text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/menuIdItem"
+            android:layout_marginStart="60sp"
+            android:layout_toEndOf="@+id/menuIdItem"
+            android:autofillHints="Description"
+            android:hint="Description"
+            android:inputType="textMultiLine"
+            android:maxLines="6"
+            android:textColorHint="@color/highGreen"
+            android:textSize="12sp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/valPrice"
+            style="@style/Text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/itemName"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@+id/imgItm"
+            android:autofillHints="Price"
+            android:hint="Price"
+            android:textColorHint="@color/highGreen"
+            android:inputType="numberDecimal"
+            android:singleLine="true"
+            android:textSize="12sp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <Button
+            android:id="@+id/btnEdtMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            android:textSize="12sp"
+            android:layout_marginStart="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/valPrice"
+            android:backgroundTint="@color/greenEdit"
+            android:text="Edit"/>
+
+        <Button
+            android:id="@+id/btnUpdMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/midGreen"
+            android:textSize="12sp"
+            android:layout_alignBaseline="@+id/btnEdtMenu"
+            android:layout_toEndOf="@+id/btnEdtMenu"
+            android:text="Update"/>
+
+        <Button
+            android:id="@+id/btnClc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/gray"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/btnEdtMenu"
+            android:textSize="12sp"
+            android:text="Cancel"/>
+
+        <Button
+            android:id="@+id/btnDelMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/red"
+            android:layout_alignBaseline="@+id/btnClc"
+            android:layout_toEndOf="@+id/btnClc"
+            android:textSize="12sp"
+            android:text="Delete"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

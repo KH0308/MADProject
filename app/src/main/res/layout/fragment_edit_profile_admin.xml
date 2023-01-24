@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/Screen"
+    tools:context=".EditProfileAdminFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- TODO: Update blank fragment layout -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:text="Edit profile"
+            android:layout_marginTop="20dp"
+            style="@style/Text"
+            android:textSize="36sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/profilePicture"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <EditText
+            android:id="@+id/ID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:autofillHints="ID"
+            android:background="#808C7D7D"
+            android:drawableEnd="@drawable/ic_baseline_mode_edit_24"
+            android:hint="ID"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:singleLine="true"
+            style="@style/Text"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:autofillHints="Username"
+            android:background="#808C7D7D"
+            android:drawableEnd="@drawable/ic_baseline_mode_edit_24"
+            android:hint="Name"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:singleLine="true"
+            style="@style/Text"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/mail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:autofillHints="Email"
+            android:background="#808C7D7D"
+            android:drawableEnd="@drawable/ic_baseline_mode_edit_24"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:minHeight="48dp"
+            android:singleLine="true"
+            style="@style/Text"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:autofillHints="Contact Number"
+            android:background="#808C7D7D"
+            android:drawableEnd="@drawable/ic_baseline_mode_edit_24"
+            android:hint="Contact Number"
+            android:inputType="phone"
+            android:minHeight="48dp"
+            android:singleLine="true"
+            style="@style/Text"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/pwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:autofillHints="Password"
+            android:background="#808C7D7D"
+            android:drawableEnd="@drawable/ic_baseline_mode_edit_24"
+            android:hint="Password"
+            android:inputType="textVisiblePassword"
+            android:minHeight="48dp"
+            android:singleLine="true"
+            style="@style/Text"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/RePwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:autofillHints="Re-Password"
+            android:background="#808C7D7D"
+            android:drawableEnd="@drawable/ic_baseline_mode_edit_24"
+            android:hint="Re-Password"
+            android:inputType="textVisiblePassword"
+            android:minHeight="48dp"
+            android:singleLine="true"
+            style="@style/Text"
+            android:textSize="20sp" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/saveBtn"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                style="@style/Button"
+                android:drawableTop="@drawable/ic_baseline_save_24"
+                android:text="Save"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.143"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.504" />
+
+            <Button
+                android:id="@+id/cancelBtn"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                style="@style/Button"
+                android:drawableTop="@drawable/ic_baseline_cancel_24"
+                android:text="Cancel"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.856"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.504" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

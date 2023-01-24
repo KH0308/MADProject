@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    style="@style/Screen"
+    android:padding="10dp"
+    tools:context=".ReportAdmin">
+
+    <Button
+        android:id="@+id/backHomeSeller"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        style="@style/Button"/>
+
+    <TextView
+        style="@style/Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Sales Report"
+        android:textStyle="bold"
+        android:textSize="30sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/textTSales"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Total Sales: RM "
+            android:gravity="center"
+            style="@style/Text"/>
+
+        <TextView
+            android:id="@+id/TSales"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/textTSales"
+            android:textSize="20sp"
+            android:text="0.00"
+            style="@style/Text"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/textMSales"
+            style="@style/Text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TSales"
+            android:gravity="center"
+            android:text="Monthly Sales: RM "
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/MSales"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/textMSales"
+            android:layout_below="@+id/TSales"
+            android:textSize="20sp"
+            android:text="0.00"
+            style="@style/Text"
+            android:gravity="center" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/SVTransaction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/RVTransaction"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scrollbars="vertical"
+                android:background="#4DFFFFFF"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Spinner
+        android:id="@+id/spinSalesMonth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/midGreen"
+        android:entries="@array/spinner_values_reportByMonth"
+        android:minHeight="48dp" />
+
+    <Button
+        android:id="@+id/btnSelect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Select"
+        style="@style/Button"/>
+
+    <GridView
+        android:id="@+id/GVSalesItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:choiceMode="multipleChoice"
+        android:numColumns="3" />
+
+</LinearLayout>

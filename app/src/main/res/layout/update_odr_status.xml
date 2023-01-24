@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Update Status Order"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            style="@style/Text"
+            android:textAlignment="center"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/transEdtID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="transaction ID"
+                style="@style/Text"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/menuEdtName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Menu name"
+                style="@style/Text"
+                android:textSize="16sp"
+                android:layout_marginStart="10dp"/>
+
+            <TextView
+                android:id="@+id/quantityEdt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Quantity"
+                style="@style/Text"
+                android:textSize="16sp"
+                android:layout_marginStart="10dp"/>
+
+            <TextView
+                android:id="@+id/priceEdt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Price"
+                style="@style/Text"
+                android:textSize="16sp"
+                android:layout_marginStart="10dp"/>
+
+        </LinearLayout>
+
+        <Spinner
+            android:id="@+id/StsOdrSpinner"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:entries="@array/spinner_values_odrSts" />
+
+        <Button
+            android:id="@+id/btnUpd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Button"
+            android:text="Update" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/Screen"
+    android:id="@+id/drawerLayoutMenu"
+    tools:context=".MenuManagement">
+
+    <LinearLayout
+        android:id="@+id/mainPgMM"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="List Live Order"
+            style="@style/Text"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textSize="30sp" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/SVMenuOrder"
+            android:layout_marginTop="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/RVMenuOrder"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:scrollbars="vertical"
+                    android:background="#4DFFFFFF"/>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <Button
+            android:id="@+id/refreshBtn"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:drawableTop="@drawable/ic_baseline_refresh_24" />
+
+    </LinearLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navMMAdmin"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/header_prof_admin"
+        app:menu="@menu/nav_manage_menu_admin"/>
+
+</androidx.drawerlayout.widget.DrawerLayout>

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivityAdmin"
+    android:orientation="vertical"
+    style="@style/Screen">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_margin="20dp">
+
+        <ImageView
+            android:id="@+id/Shop_image"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_marginTop="32dp"
+            android:src="@drawable/ic_launcher_background"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="#1e9c9b9b"
+            android:hint="Business Number/ID"
+            android:textColorHint="#4b6640">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/BusinessID"
+                android:singleLine="true"
+                style="@style/Text"
+                android:autofillHints="Business Number/ID"
+                android:inputType="text" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="#1e9c9b9b"
+            android:hint="Business Name"
+            android:textColorHint="#4b6640">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/BusinessName"
+                android:autofillHints="Business Name"
+                android:inputType="text"
+                android:singleLine="true"
+                style="@style/Text"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="#1e9c9b9b"
+            android:hint="Business Email"
+            android:textColorHint="#4b6640">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/emailSeller"
+                android:autofillHints="Business Email"
+                android:inputType="textEmailAddress"
+                android:singleLine="true"
+                style="@style/Text"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="#1e9c9b9b"
+            android:hint="Business Contact"
+            android:textColorHint="#4b6640">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/BusinessNumber"
+                android:autofillHints="Business Contact"
+                android:inputType="phone"
+                android:singleLine="true"
+                style="@style/Text"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="#1e9c9b9b"
+            android:hint="Password"
+            android:textColorHint="#4b6640">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/passSeller"
+                android:autofillHints="Password"
+                android:inputType="textVisiblePassword"
+                android:singleLine="true"
+                style="@style/Text"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="#1e9c9b9b"
+            android:hint="Re-Password"
+            android:textColorHint="#4b6640">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/RepassSeller"
+                android:autofillHints="Re-Password"
+                android:inputType="textVisiblePassword"
+                android:singleLine="true"
+                style="@style/Text"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:layout_marginTop="30dp"
+            android:id="@+id/registerSeller"
+            style="@style/Button"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Text"
+            android:text="Have account?"/>
+
+        <TextView
+            android:id="@+id/logNowBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login Now"
+            style="@style/Text"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</LinearLayout>

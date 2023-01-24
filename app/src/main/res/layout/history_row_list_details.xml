@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="130dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/imageViewDList"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        app:cardCornerRadius="60dp">
+
+        <ImageView
+            android:id="@+id/DetailShopIMAGE"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/loading_shape">
+
+        </ImageView>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/DetailBSNName"
+        android:layout_width="220dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="10dp"
+        android:text="Business Name"
+        android:textSize="18dp"
+        style="@style/Text"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/DetailTime"
+        android:layout_width="140dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="55dp"
+        android:layout_marginLeft="120dp"
+        android:text="Time"
+        style="@style/Text"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/DetailDate"
+        android:layout_width="140dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="75dp"
+        android:layout_marginLeft="120dp"
+        android:text="Date"
+        style="@style/Text"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/DetailPrice"
+        android:layout_width="140dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="95dp"
+        android:layout_marginLeft="120dp"
+        android:text="Total Price"
+        style="@style/Text"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/DetailQuantity"
+        android:layout_width="220dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="280dp"
+        android:layout_marginTop="50dp"
+        android:text="QTY"
+        android:textSize="18dp"
+        style="@style/Text"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/DetailItemStatus"
+        android:layout_width="220dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="280dp"
+        android:layout_marginTop="80dp"
+        android:text="STATUS"
+        android:textSize="18dp"
+        style="@style/Text"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/DetailItemName"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="35dp"
+        style="@style/Text"
+        android:text="Item Name" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="115dp"
+        android:background="@color/underline">
+
+    </View>
+
+
+</RelativeLayout>

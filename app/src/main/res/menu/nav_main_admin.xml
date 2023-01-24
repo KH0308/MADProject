@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/optHome"
+        android:title="Home"
+        android:icon="@drawable/ic_baseline_home_24"/>
+
+    <item
+        android:id="@+id/optProfile"
+        android:title="Profile"
+        android:icon="@drawable/ic_baseline_account_circle_24"/>
+
+    <item
+        android:id="@+id/optManageShop"
+        android:title="Shop Management"
+        android:icon="@drawable/ic_baseline_mode_edit_24"/>
+
+    <item
+        android:id="@+id/optReportShop"
+        android:title="Shop Report"
+        android:icon="@drawable/ic_baseline_assessment_24"/>
+
+    <item
+        android:id="@+id/optLogOut"
+        android:title="Log Out"
+        android:icon="@drawable/ic_baseline_logout_24"/>
+
+</menu>

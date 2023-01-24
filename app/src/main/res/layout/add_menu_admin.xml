@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:text="Add Menu"
+            android:layout_marginTop="20dp"
+            style="@style/Text"
+            android:textSize="36sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageItm"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ic_launcher_background" />
+
+        <EditText
+            android:id="@+id/ShopID"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="#808C7D7D"
+            android:drawableEnd="@drawable/ic_baseline_mode_edit_24"
+            android:hint="Shop ID"
+            android:textColorHint="@color/highGreen"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:singleLine="true"
+            style="@style/Text"
+            android:textSize="20sp"
+            android:autofillHints="ID Shop" />
+
+        <EditText
+            android:id="@+id/menuItmID"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:autofillHints="Item ID"
+            android:background="#808C7D7D"
+            android:drawableEnd="@drawable/ic_baseline_mode_edit_24"
+            android:hint="Menu Item ID"
+            android:textColorHint="@color/highGreen"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:singleLine="true"
+            style="@style/Text"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/ItmName"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:autofillHints="Item Name"
+            android:background="#808C7D7D"
+            android:drawableEnd="@drawable/ic_baseline_mode_edit_24"
+            android:hint="Item Name"
+            android:textColorHint="@color/highGreen"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:singleLine="true"
+            style="@style/Text"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/prc"
+            style="@style/Text"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:autofillHints="price per item"
+            android:background="#808C7D7D"
+            android:drawableEnd="@drawable/ic_baseline_mode_edit_24"
+            android:hint="Price"
+            android:textColorHint="@color/highGreen"
+            android:inputType="numberDecimal"
+            android:minHeight="48dp"
+            android:singleLine="true"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            style="@style/Text"
+            android:text="Menu Type:" />
+
+        <Spinner
+            android:id="@+id/spnMenuId"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:backgroundTint="@color/midGreen"
+            android:entries="@array/spinner_values_menuID"
+            android:minHeight="48dp" />
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            style="@style/Text"
+            android:text="Menu Category:" />
+
+        <Spinner
+            android:id="@+id/spnMenuCtg"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:backgroundTint="@color/midGreen"
+            android:entries="@array/spinner_values_menuCategory"
+            android:minHeight="48dp" />
+
+        <EditText
+            android:id="@+id/Desc"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:autofillHints="write your desc here"
+            android:background="#808C7D7D"
+            android:drawableEnd="@drawable/ic_baseline_mode_edit_24"
+            android:hint="Description"
+            android:textColorHint="@color/highGreen"
+            android:inputType="textLongMessage"
+            android:minHeight="48dp"
+            android:singleLine="false"
+            style="@style/Text"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/fabAddMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="6dp"
+            android:backgroundTint="@color/gray"
+            android:text="ADD"/>
+
+    </LinearLayout>
+
+</LinearLayout>
